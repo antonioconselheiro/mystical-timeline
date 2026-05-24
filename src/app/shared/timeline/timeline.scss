@@ -1,7 +1,7 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  margin: 1rem;
+  margin: 1.8rem 1rem 1rem;
 
   tr {
     th {
@@ -37,6 +37,39 @@ table {
         height: 6px;
         background: rgb(255, 0, 0);
         border-radius: 50%;
+      }
+
+      .year-marker {
+        position: absolute;
+        top: -0.95rem;
+        left: 100%;
+        transform: translateX(2px);
+        font-size: 0.62rem;
+        line-height: 1;
+        color: rgb(138, 138, 138);
+        white-space: nowrap;
+        background: #fff;
+        padding: 0 0.2rem;
+        z-index: 1;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          width: 40px;
+          border-top: 1px solid rgb(205, 205, 205);
+          transform: translateY(-50%);
+        }
+
+        &.year-marker--origin {
+          left: 0;
+          transform: translateX(-50%);
+        }
+
+        &.year-marker--origin::before {
+          display: none;
+        }
       }
     }
   }
