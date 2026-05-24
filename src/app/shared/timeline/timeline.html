@@ -1,0 +1,8 @@
+<table>
+  <tr>
+    <th>{{ timeline.name }}</th>
+    @for (cell of yearsWithEvents(); track cell.year) {
+      <td [class.hasEvent]="cell.hasEvent" [title]="cell.eventName"></td>
+    }
+  </tr>
+</table>

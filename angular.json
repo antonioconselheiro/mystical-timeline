@@ -64,7 +64,8 @@
               "buildTarget": "mystical-timeline:build:production"
             },
             "development": {
-              "buildTarget": "mystical-timeline:build:development"
+              "buildTarget": "mystical-timeline:build:development",
+              "port": 4207
             }
           },
           "defaultConfiguration": "development"

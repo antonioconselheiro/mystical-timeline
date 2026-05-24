@@ -1,0 +1,43 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1rem;
+
+  tr {
+    th {
+      min-width: 100px;
+      font-weight: normal;
+      border: 1px solid rgb(229, 229, 229);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 0 0.5rem;
+    }
+
+    td {
+      position: relative;
+      border: 1px solid rgb(229, 229, 229);
+      height: 30px;
+      width: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(244, 244, 244);
+      }
+
+      &.hasEvent:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 6px;
+        background: rgb(255, 0, 0);
+        border-radius: 50%;
+      }
+    }
+  }
+}
