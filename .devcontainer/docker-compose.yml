@@ -1,0 +1,14 @@
+services:
+  mystical-timeline-dev:
+    image: mystical-timeline-dev
+    container_name: mystical-timeline-dev
+    build:
+      context: ../.
+      dockerfile: ./.devcontainer/Dockerfile
+    working_dir: /mystical-timeline
+    ports:
+      - "4207:4207"
+    volumes:
+      - ..:/mystical-timeline:cached
+      - /var/run/docker.sock:/var/run/docker.sock
+    tty: true

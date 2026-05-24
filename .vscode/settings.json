@@ -1,0 +1,8 @@
+{
+  "workbench.colorTheme": "Dark hacker theme",
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "editor.formatOnSave": false,
+  "remote.forwardOnOpen": false
+}
