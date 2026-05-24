@@ -1,23 +1,7 @@
 import { Component, Input, computed } from '@angular/core';
-
-export interface TimelineEvent {
-  uuid: string;
-  name: string;
-  year?: number;
-  addYears?: [string, number];
-  source?: Array<[ string, number, number]>;
-}
-
-export interface TimelineData {
-  name: string;
-  events: TimelineEvent[];
-}
-
-export interface YearCell {
-  year: number;
-  hasEvent: boolean;
-  eventName?: string;
-}
+import { TimelineEvent } from '../../domain/timeline-event';
+import { TimelineData } from '../../domain/timeline-data';
+import { YearCell } from '../../domain/year-cell';
 
 @Component({
   selector: 'app-timeline',
@@ -28,22 +12,45 @@ export interface YearCell {
 export class Timeline {
   @Input()
   timeline!: TimelineData;
+  
+  @Input()
+  yearsPerCell?: number;
 
-  private calculateEventYears() {
+  get showYearsPerCellLegend(): boolean {
+    return this.yearsPerCell !== undefined && this.yearsPerCell !== null;
+  }
+
+  get yearsPerCellLabel(): string {
+    const step = this.getCellStep();
+
+    if (step === 1) {
+      return '1 ano';
+    }
+
+    return `${step} anos`;
+  }
+  
+  private getCellStep(): number {
+    const parsedStep = Number(this.yearsPerCell);
+    
+    if (!Number.isFinite(parsedStep) || parsedStep < 1) {
+      return 1;
+    }
+    
+    return Math.floor(parsedStep);
+  }
+
+  private resolveEvents() {
     const yearMap = new Map<string, number>();
-    const yearToEvent = new Map<number, string>();
-    const processedYears: number[] = [];
 
     if (!this.timeline.events || this.timeline.events.length === 0) {
-      return { years: [], yearToEvent };
+      return [] as Array<{ year: number; name: string }>;
     }
 
     // Primeira passagem: processar eventos com year direto
     for (const event of this.timeline.events) {
       if (event.year !== undefined) {
         yearMap.set(event.uuid, event.year);
-        yearToEvent.set(event.year, event.name);
-        processedYears.push(event.year);
       }
     }
 
@@ -57,37 +64,51 @@ export class Timeline {
           if (yearMap.has(refUuid)) {
             const calculatedYear = yearMap.get(refUuid)! + addYears;
             yearMap.set(event.uuid, calculatedYear);
-            yearToEvent.set(calculatedYear, event.name);
-            processedYears.push(calculatedYear);
             changed = true;
           }
         }
       }
     }
 
-    return { years: processedYears, yearToEvent };
+    return this.timeline.events
+      .map((event) => ({
+        year: yearMap.get(event.uuid),
+        name: event.name,
+      }))
+      .filter((event): event is { year: number; name: string } => event.year !== undefined);
   }
 
   yearsWithEvents = computed(() => {
-    const { years: eventYears, yearToEvent } = this.calculateEventYears();
+    const resolvedEvents = this.resolveEvents();
+    const cellStep = this.getCellStep();
     
-    if (eventYears.length === 0) {
+    if (resolvedEvents.length === 0) {
       return [];
     }
 
+    const eventYears = resolvedEvents.map((event) => event.year);
     const minYear = Math.min(...eventYears);
     const maxYear = Math.max(...eventYears);
-    const yearSet = new Set(eventYears);
+    const cellToEventNames = new Map<number, string[]>();
+
+    for (const event of resolvedEvents) {
+      const bucketIndex = Math.floor((event.year - minYear) / cellStep);
+      const cellYear = minYear + bucketIndex * cellStep;
+      const eventNames = cellToEventNames.get(cellYear) ?? [];
+      eventNames.push(event.name);
+      cellToEventNames.set(cellYear, eventNames);
+    }
 
     const cells: YearCell[] = [];
-    for (let year = minYear; year <= maxYear; year++) {
+    for (let year = minYear; year <= maxYear; year += cellStep) {
+      const eventNames = cellToEventNames.get(year) ?? [];
       cells.push({
         year,
-        hasEvent: yearSet.has(year),
-        eventName: yearToEvent.get(year)
+        hasEvent: eventNames.length > 0,
+        eventName: eventNames.join('; ')
       });
     }
-debugger;
+
     return cells;
   });
 }

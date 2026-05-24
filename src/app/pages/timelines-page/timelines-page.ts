@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Timeline, TimelineData } from '../../shared/timeline/timeline';
+import { TimelineData } from '../../domain/timeline-data';
+import { Timeline } from '../../shared/timeline/timeline';
 
 @Component({
   selector: 'app-timelines-page',
