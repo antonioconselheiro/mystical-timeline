@@ -29,6 +29,14 @@ export class Timeline {
 
     return `${step} anos`;
   }
+
+  private buildCellTitle(year: number, eventNames: string[]): string {
+    if (eventNames.length === 0) {
+      return `${year}`;
+    }
+
+    return `${year}: ${eventNames.join('; ')}`;
+  }
   
   private getCellStep(): number {
     const parsedStep = Number(this.yearsPerCell);
@@ -105,7 +113,8 @@ export class Timeline {
       cells.push({
         year,
         hasEvent: eventNames.length > 0,
-        eventName: eventNames.join('; ')
+        eventName: eventNames.join('; '),
+        title: this.buildCellTitle(year, eventNames)
       });
     }
 

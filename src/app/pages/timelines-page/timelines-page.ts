@@ -14,8 +14,8 @@ export class TimelinesPage {
     events: []
   };
 
-  pentateuco: TimelineData = {
-    name: 'Pentateuco',
+  genesis: TimelineData = {
+    name: 'Gênesis',
     events: [
       {
         uuid: '550e8400-e29b-41d4-a716-446655440000',
@@ -172,7 +172,7 @@ export class TimelinesPage {
 
       {
         uuid: '550e8400-e29b-41d4-a716-446655440011',
-        name: 'Nascimento de Noe, filho de Lameque',
+        name: 'Nascimento de Noé, filho de Lameque',
         addYears: [ '550e8400-e29b-41d4-a716-44665544000f', 182 ],
         source: [
           ['GEN', 5, 29]
@@ -190,7 +190,7 @@ export class TimelinesPage {
 
       {
         uuid: '550e8400-e29b-41d4-a716-446655440013',
-        name: 'Noé já havia gerado Sem, Cao e Jafe',
+        name: 'Noé já havia gerado Sem, Cam e Jafé',
         addYears: [ '550e8400-e29b-41d4-a716-446655440011', 500 ],
         source: [
           ['GEN', 5, 32]
@@ -200,7 +200,7 @@ export class TimelinesPage {
       {
         uuid: '550e8400-e29b-41d4-a716-446645440100',
         name: 'Noé era da idade de seiscentos anos, quando o dilúvio das águas vieram sobre a terra',
-        addYears: [ '550e8400-e29b-41d4-a716-446655440013', 600 ],
+        addYears: [ '550e8400-e29b-41d4-a716-446655440011', 600 ],
         source: [
           ['GEN', 7, 6],
           ['GEN', 7, 11]
@@ -353,7 +353,7 @@ export class TimelinesPage {
 
       {
         uuid: '550e8400-e29b-41d4-a716-446655440024',
-        name: 'Tera gerou Abrao, Naor e Hara',
+        name: 'Tera gerou Abrão, Naor e Hara', // nascimento de abraão é impreciso
         addYears: [ '550e8400-e29b-41d4-a716-446655440022', 70 ],
         source: [
           ['GEN', 11, 26],
@@ -362,20 +362,83 @@ export class TimelinesPage {
       },
 
       {
-        uuid: '550e8400-e29b-41d4-a716-446655440025',
-        name: 'Hara gerou Lo',
-        addYears: [ '550e8400-e29b-41d4-a716-446655440024', 0 ],
+        uuid: '550e8400-e29b-41d4-a716-446655440027',
+        name: 'Abrao saiu de Hara aos setenta e cinco anos, e Ló foi com ele',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440024', 75 ],
         source: [
-          ['GEN', 11, 27]
+          ['GEN', 12, 4]
         ]
       },
 
       {
-        uuid: '550e8400-e29b-41d4-a716-446655440026',
-        name: 'Morte de Hara em Ur dos caldeus',
-        addYears: [ '550e8400-e29b-41d4-a716-446655440024', 0 ],
+        uuid: '550e8400-e29b-41d4-a716-446655440028',
+        name: 'Agar deu a luz Ismael quando Abrão tinha oitenta e seis anos',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440022', 86 ],
         source: [
-          ['GEN', 11, 28]
+          ['GEN', 16, 16]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-446655440029',
+        name: 'O Senhor apareceu a Abrão quando ele tinha noventa e nove anos',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440022', 99 ],
+        source: [
+          ['GEN', 17, 1]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002a',
+        name: 'Nascimento de Isaque, filho de Abraão, quando ele tinha cem anos',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440022', 100 ],
+        source: [
+          ['GEN', 21, 5]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002b',
+        name: 'Morte de Abraão aos cento e setenta e cinco anos',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440022', 175 ],
+        source: [
+          ['GEN', 25, 7]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002e',
+        name: 'Morte de Ismael aos cento e trinta e sete anos',
+        addYears: [ '550e8400-e29b-41d4-a716-446655440028', 137 ],
+        source: [
+          ['GEN', 25, 17]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002c',
+        name: 'Nascimento de Jaco e Esau quando Isaque tinha sessenta anos',
+        addYears: [ '550e8400-e29b-41d4-a716-44665544002a', 60 ],
+        source: [
+          ['GEN', 25, 26]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002d',
+        name: 'Morte de Isaque aos cento e oitenta anos',
+        addYears: [ '550e8400-e29b-41d4-a716-44665544002a', 120 ],
+        source: [
+          ['GEN', 35, 28]
+        ]
+      },
+
+      {
+        uuid: '550e8400-e29b-41d4-a716-44665544002f',
+        name: 'Morte de Jaco aos cento e quarenta e sete anos',
+        addYears: [ '550e8400-e29b-41d4-a716-44665544002c', 147 ],
+        source: [
+          ['GEN', 47, 28]
         ]
       }
     ]

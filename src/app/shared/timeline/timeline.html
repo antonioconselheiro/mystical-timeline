@@ -2,7 +2,7 @@
   <tr>
     <th>{{ timeline.name }}</th>
     @for (cell of yearsWithEvents(); track cell.year; let i = $index) {
-      <td [class.hasEvent]="cell.hasEvent" [title]="cell.eventName">
+      <td [class.hasEvent]="cell.hasEvent" [title]="cell.title">
         @if (i === 0 || i % 5 === 4) {
           <span class="year-marker" [class.year-marker--origin]="i === 0">{{ cell.year }}</span>
         }

@@ -19,8 +19,9 @@ table {
     td {
       position: relative;
       border: 1px solid rgb(229, 229, 229);
+      min-height: 30px;
       height: 30px;
-      width: 10px;
+      min-width: 10px;
       cursor: pointer;
 
       &:hover {
@@ -57,7 +58,7 @@ table {
           position: absolute;
           top: 50%;
           right: 100%;
-          width: 40px;
+          width: 30px;
           border-top: 1px solid rgb(205, 205, 205);
           transform: translateY(-50%);
         }
