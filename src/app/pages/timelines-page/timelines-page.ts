@@ -350,88 +350,225 @@ export class TimelinesPage {
         source: [
           ['JUB', 7, 20]
         ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550030',
+        name: 'No vigésimo nono jubileu, na primeira semana, no início desta Arpachshad tomou para si uma esposa e seu nome era Rasu\'eja, a filha de Susan, a filha de Elam',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(29, 1, 1)],
+        source: [
+          ['JUB', 8, 1]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550031',
+        name: 'lhe deu um filho no terceiro ano, nesta semana, e ele chamou o seu nome Kainam (filho de Arpachshad)',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(29, 1, 3)],
+        source: [
+          ['JUB', 8, 2]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550032',
+        name: 'no ano do jubileu trigésima, na segunda semana, no primeiro ano dele, ele tomou para si uma esposa, e seu nome era Melka, a filha do Madai, filho de Jafé',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 2, 1)],
+        source: [
+          ['JUB', 8, 5]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550033',
+        name: 'no quarto ano, que gerou um filho, e chamou o seu nome Selá',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 2, 4)],
+        source: [
+          ['JUB', 8, 5],
+          ['JUB', 8, 6]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550034',
+        name: 'Selá cresceu e tomou para si uma esposa, e seu nome era Mu\'ak, filha de Kesed, irmão de seu pai, em um trigésimo do jubileu e, na quinta semana, no primeiro ano',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 5, 1)],
+        source: [
+          ['JUB', 8, 6]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550035',
+        name: 'E ela lhe deu um filho, no quinto ano do mesmo, e ele pôs o nome de Eber',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 5, 5)],
+        source: [
+          ['JUB', 8, 7]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550036',
+        name: 'Eber tomou para si uma esposa, e seu nome era Azurad, filha de Nebrod, no trigésimo segundo Jubileu, na sétima semana, no seu terceiro ano.',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(32, 7, 3)],
+        source: [
+          ['JUB', 8, 7],
+          ['JUB', 8, 8]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550037',
+        name: 'E no seu sexto ano, ela deu-lhe o filho, e chamou o seu nome Pelegue',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(32, 7, 6)],
+        source: [
+          ['JUB', 8, 9]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550038',
+        name: 'No início do jubileu trigésimo terceiro que divide a Terra em três partes, por Sem e Jafé e Cam, segundo a herança de cada um',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(33, 1, 1)],
+        source: [
+          ['JUB', 8, 10]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550039',
+        name: 'E, na terceira semana deste jubileu dos demônios imundos começaram a desviar os filhos de Noé, e fazer errar e destruí-los.',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(33, 3, 1)],
+        source: [
+          ['JUB', 10.1, 10.2 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550040',
+        name: 'E Noé dormiu com seus pais, e foi sepultado em Monte Lubar na terra de Ararate. Novecentos e cinquenta anos, ele completou em sua vida, dezenove jubileus e duas semanas e cinco anos e, em sua vida na terra.',
+        addYears: ['440e8400-e29b-41d4-a716-553311550019', 950],
+        source: [
+          ['JUB', 10, 16 ],
+          ['JUB', 10, 17 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550041',
+        name: 'E nos três e jubileu trigésimo, no primeiro ano na segunda semana, Peleg tomou para si uma esposa, cujo nome era Lomná filha de Sina\'ar',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 2, 1)],
+        source: [
+          ['JUB', 10, 18 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550042',
+        name: 'E ela lhe deu um filho no quarto ano desta semana, e ele chamou o seu nome Reu',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 2, 4)],
+        source: [
+          ['JUB', 10, 18 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550043',
+        name: 'E eles começaram a construir, e na quarta semana fizeram tijolos com fogo, e os tijolos serviram-lhes de pedra, e barro com que cimentaram juntos era asfalto que sai do mar',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(30, 4, 1)],
+        source: [
+          ['JUB', 10, 20 ],
+          ['JUB', 10, 21 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550044',
+        name: 'E eles construíram: quarenta e três anos eles foram construindo, a sua largura era de 203 tijolos, e a altura (de um tijolo) era o terceiro de uma, sua altura era de 5433 cúbitos e 2 palmos, e (a extensão de um parede foi) treze estádios (e dos outros trinta estádios).',
+        addYears: ['440e8400-e29b-41d4-a716-553311550043', 43],
+        source: [
+          ['JUB', 10, 21 ],
+          ['JUB', 10, 22 ]
+        ]
+      },
+
+      {
+        uuid: '440e8400-e29b-41d4-a716-553311550045',
+        name: 'Na quarta semana no primeiro ano do seu início nas quatro e trigésimo jubileu, eles estavam dispersos da terra de Sinar.',
+        addYears: ['440e8400-e29b-41d4-a716-553311550000', this.jubileeCalc(34, 1, 1)],
+        source: [
+          ['JUB', 10, 27 ]
+        ]
       }
     ]
   };
 
-// [Capítulo 8]
-// 1 No vigésimo nono jubileu, na primeira semana, no início desta Arpachshad tomou para si uma
-// esposa e seu nome era Rasu'eja, a filha de Susan, a filha de Elam, e ela
-// 2 lhe deu um filho no terceiro ano, nesta semana, e ele chamou o seu nome Kainam. E o filho
-// cresceu, e seu pai lhe ensinou a escrever, e ele passou a procurar por si mesmo um lugar onde ele
-// poderia aproveitar para
-// 3-se de uma cidade. E ele encontrou um escrito que o ex-(gerações) tinha esculpido na rocha, e ele
-// leu o que estava nela, e ele transcreveu e pecou devido a ele, pois ele continha a doutrina da
-// Sentinelas em conformidade com o que eles usaram para observar o presságios do sol e da lua e
-// 4 estrelas em todos os sinais do céu. E ele escreveu e não disse nada a respeito dele, pois ele foi
-// 5 medo de falar sobre isso a Noé para que ele não deveria ficar bravo com ele por conta disso. E no
-// ano do jubileu trigésima, na segunda semana, no primeiro ano dele, ele tomou para si uma esposa, e
-// seu nome era Melka, a filha do Madai, filho de Jafé, e no quarto ano, que gerou um filho, e
-// 6 chamou o seu nome Selá; pois ele disse: 'Em verdade vos foram enviados. [E no quarto ano ele
-// nasceu], e Selá cresceu e tomou para si uma esposa, e seu nome era Mu'ak, filha de Kesed, irmão de
-// 13seu pai, em um trigésimo do jubileu e, na quinta semana , no primeiro ano
-// 7 º. E ela lhe deu um filho, no quinto ano do mesmo, e ele pôs o nome de Eber, e ele tomou para si
-// uma esposa, e seu nome era "Azurad, filha de Nebrod, no trigésimo segundo
-// 8 Jubileu, na sétima semana, no seu terceiro ano. E no seu sexto ano, ela deu-lhe o filho, e chamou
-// o seu nome Pelegue, pois nos dias em que ele nasceu os filhos de Noé começou
-// 9 de dividir a terra entre si: por isso chamou o seu nome Peleg. E eles
-// 10 dividido (isto) secretamente entre si, e disse que a Noé. E sucedeu que, no início do jubileu
-// trigésimo terceiro que divide a Terra em três partes, por Sem e Jafé e Cam, segundo a herança de
-// cada um, no primeiro ano na primeira semana, quando um de nós
-// 11 que tinham sido enviados, foi com eles. E chamou seus filhos, e se aproximaram a ele, eles e
-// seus filhos, e ele dividiu a terra em lotes, que seus três filhos estavam a tomar posse, e estendeu suas
-// mãos, e teve a redação de no seio de Noé, seu pai.
-// 12 E lá veio a escrever como muito Sem é o meio da terra que ele deveria ter como herança para si e
-// para seus filhos, para as gerações de eternidade, a partir do meio da serra de Rafa, a partir da foz do
-// água do rio Tina, e sua parcela vai para o oeste pelo meio deste rio, e se estende até que se chegue a
-// água dos abismos, dos quais o rio avança e despeja suas águas no mar Me'at, e este rio desagua no
-// mar grande. E tudo o que é para o norte é Jafé, e tudo o que é para o
-// 13 sul pertence Sem. E estende-se até alcançar Karaso: este é no seio da língua
-// 14, que olha para o sul. E a sua parte se estende ao longo do mar grande, e se estende em linha reta
-// até atingir o oeste da língua, que olha para o sul: por esse mar é
-// 15 nomeado a língua do mar do Egito. E acontece daqui para o sul em direção à foz do grande mar
-// na costa do (a) As águas, e se estende até o oeste para 'Afra, e estende-se até alcançar as águas do
-// rio Giom, e ao sul das águas do Gião, a
-// 16 margens deste rio. E isso se estende para o leste, até chegar ao Jardim do Éden, para o sul do
-// mesmo, [a] ao sul e do leste de toda a terra de Éden e de todo o leste, ele se vira para o leste e
-// prossegue até que atinge o leste da montanha chamado Rafa, e desce
-// 17 para o banco da boca do rio Tina. Esta parte saiu por sorteio para Sem e seus filhos,
-// 18 que deveriam possuir para sempre aos seus gerações para sempre. E Noé alegrou-se que esta
-// parcela saiu de Sem e para seus filhos, e ele se lembrou de tudo que tinha falado com a boca na
-// profecia, pois ele havia dito:
-// "Bendito seja o Senhor Deus de Sem
-// E que o Senhor habita na casa do Sem.
-// 19 E ele sabia que o Jardim do Éden é o santo dos santos, ea habitação do Senhor, e Mount Sinai no
-// centro do deserto, e Monte Sião, o centro do umbigo da terra, esses três
-// 20 foram criados como locais sagrados frente para o outro. E abençoou Deus dos deuses, que tinha
-// colocado o
-// 21 Palavra do Senhor em sua boca, e o Senhor para sempre. E ele sabia que uma parte abençoado e
-// uma bênção tinha chegado a Sem e seus filhos até as gerações para sempre, toda a terra do Éden e
-// toda a terra do mar Vermelho, e toda a terra do oriente e na Índia, e na Mar Vermelho e as
-// montanhas dos mesmos, e toda a terra de Basã, e todas as terras do Líbano e as ilhas de Kaftur, e
-// todas as montanhas de Sanir e 'Amana, e as montanhas da Assíria, no norte, e toda a terra do Elam,
-// Assíria, e Babel, e Susan e Ma'edai, e todas as montanhas de Ararate, e toda a região além do mar,
-// que é além das montanhas da Assíria, para o
-// 22 norte, uma terra abençoada e espaçoso, e tudo o que é muito bom. E para Ham saiu a segunda
-// parcela, além do Giom em direção ao sul, à direita do Jardim, e que se estende em direção ao sul e
-// que se estende a todas as montanhas de fogo, e se estende em direção ao oeste com o mar de «Atel e
-// se estende em direção ao oeste até atingir o mar de Ma'uk que (mar) em que
-// 23 tudo o que não é destruído desce. E ela sai em direção ao norte até os limites de Gadir, e sai para
-// a costa das águas do mar para as águas do grande mar até que se aproxima para o rio Giom, e vai ao
-// longo do rio até que Giom atinge o direito do Jardim
-// 1424 do Éden. E esta é a terra que saiu de Ham como a parte que ele estava a ocupar
-// 25 para sempre para si e seus filhos até suas gerações, para sempre. E para Jafé saíram da terceira
-// parte além do rio Tina ao norte da vazão de suas águas, e se estende ao norte-
-// 26 de leste a toda a região de Gog e de todos os países do leste da mesma. E isso se estende para
-// norte até ao norte, e se estende até as montanhas de Quelt em direção ao norte, e para o mar de
-// 27 Ma'uk, e sai para o leste de Gadir na medida em que a região das águas do mar. E isso se estende
-// até que se aproxima do oeste de Fara e retorna para "Aferag, e que se estende de leste
-// 28 para as águas do mar de Me'at. E isso se estende para a região do rio Tina, em direcção nordeste,
-// até que se aproxima do limite de suas águas para a montanha Rafa, e gira
-// 29 rodada para o norte. Esta é a terra que saiu de Jafé e seus filhos como parte de sua herança que
-// ele deve possuir para si e para seus filhos, para as suas gerações para sempre;
-// 30 cinco ilhas grandes, e uma grande terra no norte. Mas é fria, e as terras de Ham está quente, e as
-// terras de Sem é nem quente nem fria, que é misturado a frio e calor.
+//    [Capítulo 11]
+//  1 º e no jubileu trigésimo quinto, na terceira semana, no primeiro ano do mesmo, Reu tomou para si
+//  uma esposa, e seu nome era "Ora, a filha de 'Ur, filho de Kesed, e ela lhe deu um filho, e
+//  2 Ele chamou o seu nome Seroh, no sétimo ano desta semana neste jubileu. E os filhos de Noé
+//  começou a guerra em si, ter em cativeiro e matar uns aos outros, e para derramar o sangue dos
+//  homens sobre a terra, e comer sangue, e para construir cidades fortes, e as paredes e torres, e
+//  indivíduos (começou) a exaltar-se acima da nação, e para fundar o início dos reinos, e para ir para a
+//  guerra contra o povo povo, e nação contra nação e cidade contra cidade, e todos (começou) de fazer
+//  o mal, e para adquirir braços, e para ensinar os seus filhos da guerra, e eles começaram a capturar as
+//  cidades e para vender
+//  17três escravos do sexo masculino e feminino. E 'Ur, filho de Kesed, construiu a cidade de "Ara dos
+//  caldeus, e chamou o seu nome após o seu nome e o nome de seu pai. E eles fizeram para si imagens
+//  de fundição, e adoraram cada um ídolo, a imagem de fundição que tinham feito para eles, e eles
+//  começaram a fazer imagens de escultura e simulacros imundo, e os espíritos malignos
+//  5 assistida e seduzido (eles) em cometer a transgressão e a impureza. E o príncipe Mastema
+//  esforçou-se para fazer tudo isso, e ele enviou outros espíritos, os que foram colocados sob a sua
+//  mão, para fazer toda espécie de mal e do pecado, e toda sorte de transgressão, de corromper e
+//  destruir,
+//  6 e para derramar sangue sobre a terra. Por esta razão, ele chamou o nome da Seroh, Serugue, para
+//  cada um
+//  7 virou-se para fazer todo tipo de pecado e transgressão. E ele cresceu, e habitou em Ur dos
+//  Caldeus, junto com o pai da mãe de sua esposa, e ele adorou ídolos, e ele tomou para si uma esposa
+//  no ano do jubileu trigésimo sexto, na quinta semana, no primeiro ano º, e seu nome era Melka, a
+//  filha
+//  8 º da Kaber, a filha do irmão de seu pai. Naor e ela lhe deu, no primeiro ano desta semana, e ele
+//  cresceu e habitou em Ur dos Caldeus, e seu pai ensinou-lhe as pesquisas dos
+//  9 caldeus e augura nada de divino, de acordo com os sinais do céu. E no ano do jubileu trigésimo
+//  sétimo na sexta semana, no primeiro ano dele, ele tomou para si uma esposa, e seu nome era
+//  "Ijaska, o
+//  Filha de 10 Nestag dos caldeus. Terah e ela lhe deu no sétimo ano desta semana.
+//  11 E o príncipe Mastema enviou corvos e aves para devorar a semente que foi semeada na terra,
+//  para destruir a terra, e roubar os filhos dos homens do seu trabalho. Antes que pudessem arar
+//  12 na semente, os corvos escolhido (isto) a partir da superfície do solo. E por isso chamou o seu
+//  nome Terah, porque os corvos e as aves reduziu-os à miséria e devorou suas
+//  13 sementes. E os anos começaram a ser estéril, devido às aves, e comeram todas as frutas das
+//  árvores das árvores: era só com muito esforço que eles poderiam poupar um pouco de todos os
+//  frutos do
+//  14 a terra em seus dias. E, neste jubileu trigésimo nono, na segunda semana no primeiro ano, Terah
+//  tomou para si uma esposa, e seu nome era "Edna, a filha de" Abrão, a filha da irmã de seu pai. E no
+//  sétimo ano desta semana ela deu-lhe um filho, e chamou o seu nome Abrão,
+//  15, o nome do pai de sua mãe, pois ele havia morrido antes de sua filha havia concebido um filho.
+//  16 E a criança começou a entender os erros da terra que todos se extraviaram, após imagens de
+//  escultura e depois de a imundícia, e seu pai lhe ensinou a escrever, e ele foi de duas semanas de
+//  anos, e ele
+//  17 se separou de seu pai, que ele poderia não adorar ídolos com ele. E ele começou a orar ao
+//  Criador de todas as coisas que Ele pode salvá-lo dos erros dos filhos de homens, e que
+//  18 a sua parte e não deve cair de erro após a impureza e vileza. E o tempo veio de sementes para o
+//  plantio de sementes sobre a terra, e todos eles saíram juntos para proteger suas sementes contra a
+//  19 corvos, e Abrão saiu com aqueles que foram, e que a criança era um rapaz de quatorze anos. E
+//  uma nuvem de corvos passou a devorar a semente, Abrão e correu para encontrá-los antes que se
+//  estabeleceram no chão, e gritou para eles antes de eles se estabeleceram na terra para devorar as
+//  sementes, e disse: 'Desce
+//  20: não voltar ao lugar de onde vocês vieram, e que passou a girar para trás. E causados nuvens do
+//  ravens (corvos)a voltar setenta vezes a dia e tudo a ravens (corvos)toda a terra
+//  21 Quando Abrão estava lá não resolvida há muito como um todo. E todos os que estavam com ele
+//  em toda a terra o viu chorar, e todos os corvos voltar, e seu nome tornou-se grande em todos os
+//  22 a terra dos caldeus. E lá veio a ele este ano todos aqueles que desejavam semear, e foi com eles
+//  até o momento da semeadura cessou, e que semeou sua terra, e esse ano eles trouxeram
+//  23 casa bastante grão e comer e ficaram satisfeitos. E no primeiro ano da quinta semana Abrão
+//  ensinou aqueles que fizeram implementos para os bois, os artesãos em madeira, e eles fizeram uma
+//  18embarcação acima do solo, de frente para a armação do arado, a fim de colocar os respectivos
+//  semente, e a semente daí caiu em cima da parte do arado, e estava escondido na terra, e eles já não
+//  temia a
+//  24 corvos. E desta maneira que eles fizeram (navios) acima do solo em todos os quadros do arado, e
+//  semeadas e cultivadas todas as terras, conforme Abrão lhes ordenara, e já não temia as aves.
+
 
   genesis: TimelineData = {
     name: 'Gênesis',
@@ -864,6 +1001,6 @@ export class TimelinesPage {
   };
 
   jubileeCalc(numeroDoJubileuNoTexto: number, numeroDaSemana = 1, numeroDoAno = 1): number {
-    return this.jubileuTempos.JUBILEU * (numeroDoJubileuNoTexto - 1) + this.jubileuTempos.SEMANA * (numeroDaSemana - 1) + (numeroDoAno - 1);
+    return this.jubileuTempos.JUBILEU * (numeroDoJubileuNoTexto - 1) + this.jubileuTempos.SEMANA * (numeroDaSemana - 1) + numeroDoAno;
   }
 }
